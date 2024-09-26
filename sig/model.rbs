@@ -1,0 +1,4 @@
+class Model
+  def self.has_paper_trail: (?untyped) -> void
+  def is_live?: () -> true
+end
