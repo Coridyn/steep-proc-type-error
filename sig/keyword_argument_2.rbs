@@ -1,0 +1,5 @@
+class KeywordArgument2
+  def self.has_paper_trail: (if: Proc) -> void
+  
+  def is_live?: () -> true
+end

@@ -1,0 +1,11 @@
+class OptionsInterface
+  type options[T] = {
+      ?on: Array[Symbol],
+      ?if: ^(T) -> bool,
+  }
+  
+  def self.has_paper_trail: (?options[instance]) -> void
+  
+  def is_live?: () -> true
+end
+

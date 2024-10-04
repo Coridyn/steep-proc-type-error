@@ -1,0 +1,5 @@
+class KeywordArgument1
+  def self.has_paper_trail: (if: ^(instance) -> bool) -> void
+  
+  def is_live?: () -> true
+end

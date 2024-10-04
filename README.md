@@ -4,6 +4,24 @@
 2. Run `bundle install`
 3. Run `steep check`
 
+---
+
+**Update 2024-10-04**
+
+I have updated the example with some extra/alternative type definitions to see if they will allow
+the Proc argument types to be inferred.
+
+  * Try using keyword arguments
+    * `lib/keyword_argument_1.rb`
+    * `lib/keyword_argument_2.rb`
+
+  * Try using an object interface that defines the types for the allowed options hash
+    * `lib/options_interface.rb`
+
+Currently all of those alternatives are failing in the same way as the base case.
+
+---
+
 **Expected behaviour**
 
 Steep typechecking should pass because the `untyped` type should propagate to the proc parameter.
